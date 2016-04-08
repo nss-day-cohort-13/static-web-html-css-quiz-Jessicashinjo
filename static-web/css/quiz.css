@@ -10,3 +10,8 @@ The availability element extends the full width of the card, with a dark grey ba
 -Responsive design
 
 */
+
+img {
+	max-width: 150px;
+	max-height: 100px;
+}
