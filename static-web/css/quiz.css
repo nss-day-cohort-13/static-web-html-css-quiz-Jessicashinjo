@@ -11,6 +11,17 @@ The availability element extends the full width of the card, with a dark grey ba
 
 */
 
+.clearfix:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.allCards {
+  margin: 0 auto;
+}
 
 .card {
 	border: solid 1px lightblue;
@@ -24,7 +35,7 @@ The availability element extends the full width of the card, with a dark grey ba
 	font-size: 2em;
 }
 
-img {
+.productImg {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -62,46 +73,63 @@ ul {
 
 @media (min-width: 700px) {
 
-  .clearfix:after {
-     content: ".";
-     visibility: hidden;
-     display: block;
-     height: 0;
-     clear: both;
-  }
 
-  .allCards {
-    max-width: 100%;
-  }
-
-	.card {
+  .card {
     display: inline-block;
     float: left;
-    max-width: 40%;
-    margin: 2.5%;
+    max-width: 45%;
+    margin: 2.3%;
   }
 
   .cardTitle {
     font-size: 20px;
   }
 
-  img {
-    max-width: 250px;
+  .productImg {
+    max-width: 225px;
+  }
+
+}
+
+@media (min-width: 1000px) {
+
+
+	.card {
+    display: inline-block;
+    float: left;
+    max-width: 45%;
+    margin: 2.3%;
+  }
+
+  .cardTitle {
+    font-size: 30px;
+  }
+
+  .productImg {
+    max-width: 275px;
   }
 
 
 }
 
-@media (min-width: 1000px) and (orientation: landscape) {
-
-
-
-
-}
 
 @media (min-width: 1200px){
 
 
+  .card {
+    display: inline-block;
+    float: left;
+    max-width: 30%;
+    margin: 1.55%;
+  }
+
+  .cardTitle {
+    font-size: 20px;
+  }
+
+  .productImg {
+    max-width: 250px;
+  }
 
 
 }
