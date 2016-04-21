@@ -1,27 +1,14 @@
-/*
-The entire card has a solid 1px border that is lightblue.
-The card title has a dotted 1px border that is lightgray.
-The title and product image are centered.
-Notice that the text for the description in the image is justified.
-The text for the product specification details and pricing details is bold.
-The availability element extends the full width of the card, with a dark grey background and yellow text.
-
-***** Personal Challenge *****
--Responsive design
-
-*/
-
 * {
   box-sizing: border-box;
 }
 
 /*Base Style for Card Layout*/
 .clearfix:after {
-   content: ".";
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 .allCards {
@@ -63,8 +50,8 @@ The availability element extends the full width of the card, with a dark grey ba
 
 /*Targeted the element instead of adding class because I needed to target all of them and nothing conflicted*/
 h1, h3 {
-	padding: none;
-	margin: 2% 2%;
+	padding: 0;
+	margin: 2%;
 }
 
 li {
@@ -82,7 +69,6 @@ ul {
 
 
   .card {
-    display: inline-block;
     float: left;
     max-width: 45%;
     margin: 2.5%;
