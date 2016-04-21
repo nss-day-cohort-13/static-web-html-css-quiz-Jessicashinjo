@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+/*Base Style for Card Layout*/
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.allCards {
+  margin: 0 auto;
+}
+
+.card {
+	border: solid 1px lightblue;
+	margin: 5%;
+}
+
+.cardTitle {
+	text-align: center;
+	border: dotted 1px lightgray;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.productImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	max-width: 400px;
+	max-height: 400px;
+}
+
+.description {
+	text-align: justify;
+	margin: auto;
+	width: 90%;
+}
+
+.availability {
+	background: darkgrey;
+	color: yellow;
+	text-align: left;
+	padding-left: 2%;
+}
+
+/*Targeted the element instead of adding class because I needed to target all of them and nothing conflicted*/
+h1, h3 {
+	padding: 0;
+	margin: 2%;
+}
+
+li {
+	font-weight: bold;
+	list-style: none;
+}
+
+ul {
+	padding-left: 5%;
+	margin: 2%;
+}
+
+/*Changes to 2 column layout*/
+@media (min-width: 700px) {
+
+
+  .card {
+    float: left;
+    max-width: 45%;
+    margin: 2.5%;
+  }
+
+  .cardTitle {
+    font-size: 20px;
+  }
+
+  .productImg {
+    max-width: 225px;
+  }
+
+}
+
+/*Stays at 2 column layout with larger images and title font*/
+@media (min-width: 1000px) {
+
+
+	.card {
+    max-width: 45%;
+    margin: 2.5%;
+  }
+
+  .cardTitle {
+    font-size: 30px;
+  }
+
+  .productImg {
+    max-width: 275px;
+  }
+
+}
+
+/*Changes to 3 column layout with smaller images and font*/
+@media (min-width: 1200px){
+
+
+  .card {
+    max-width: 30%;
+    margin: 1.66%;
+  }
+
+  .cardTitle {
+    font-size: 20px;
+  }
+
+  .productImg {
+    max-width: 250px;
+  }
+
+
+}
